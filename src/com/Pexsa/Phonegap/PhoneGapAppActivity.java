@@ -1,6 +1,6 @@
 package com.Pexsa.Phonegap;
 
-import com.phonegap.DroidGap;
+import org.apache.cordova.*;
 
 import android.os.Bundle;
 
@@ -9,6 +9,6 @@ public class PhoneGapAppActivity extends DroidGap {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        super.loadUrl("file:///android_asset/www/index.html");
     }
 }
